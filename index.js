@@ -14,7 +14,7 @@ function keepGoing(array, changeValue, skipValue) {
 
 function findBy(array, findFn) {
   for (let i = 0; i < array.length; i++) {
-  if (findFn(array[i])) {
-    return array[i]}}
-    return null;
+  if (findFn(array[i])) { //if findFn is valid for an indexed element of array
+    return array[i]}} //return that indexed element
+    return null; //else return null
 }
